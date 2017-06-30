@@ -1,0 +1,102 @@
+body {
+    font-size: 1.4em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    margin-bottom: 15px;
+}
+
+a:hover {
+    transition: all ease-in-out 0.3s;
+}
+
+#logo-horse {
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#wordEstudio {
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    margin-left: 8px;
+    color: #858484;
+}
+
+#wordDieguez {
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+
+#sliderFotos {
+    max-width: 800px;
+    max-height: 350px;
+}
+
+#exito {
+    font-weight: 700;
+}
+
+.header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.slogan {
+    font-size: 12px;
+}
+
+.navbar-right {
+    margin-top: 5px;
+}
+
+.main {
+    margin-top: 90px;
+}
+
+.center {
+    text-align: center;
+}
+
+.thumbnail {
+    margin-top: 15px;
+    border: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    user-select: none;
+    text-decoration: none;
+}
+
+.thumbnail img {
+    width: 90px;
+    height: 90px;
+}
+
+.navbar-fixed-bottom {
+    border-top: 1px solid #ccc;
+}
+
+.footer .row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.breadcrumb {
+    margin: 0px;
+}
+
+.fa {
+    color: black;
+}
