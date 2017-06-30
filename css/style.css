@@ -25,25 +25,55 @@ a:hover {
     margin-right: 10px;
 }
 
-#wordEstudio {
+.wordEstudio {
     letter-spacing: 1px;
     font-size: 1.3em;
-    margin-left: 8px;
+    margin-left: 0px;
     color: #858484;
+    font-weight: 300;
 }
 
-#wordDieguez {
+.wordDieguez {
     letter-spacing: 1px;
     font-size: 1.3em;
+    color: black;
+    font-weight: 300;
+}
+
+#en {
+    float: left;
+    font-size: 18px;
+}
+
+#lado {
+    float: right;
+    margin-left: 20px;
+    font-size: 18px;
 }
 
 #sliderFotos {
     max-width: 800px;
     max-height: 350px;
+    box-shadow: 0px 5px 5px #ccc;
 }
 
 #exito {
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.normalize{
+    font-style: normal;
+}
+
+.jumbotron {
+    max-height: 328.33px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0px;
+    border-radius: 0px !important;
+    box-shadow: 0px 5px 5px #ccc;
+    background: #333333;
+    color: white !important;
 }
 
 .header {
@@ -60,7 +90,7 @@ a:hover {
 }
 
 .main {
-    margin-top: 90px;
+    margin-top: 100px;
 }
 
 .center {
@@ -68,7 +98,7 @@ a:hover {
 }
 
 .thumbnail {
-    margin-top: 15px;
+    margin-top: 10px;
     border: none;
     transition: all ease-in-out 0.3s;
 }
@@ -83,14 +113,18 @@ a:hover {
     width: 90px;
     height: 90px;
 }
+.navbar-fixed-top{
 
+    border-bottom: 2px inset #f2e2cd;
+}
 .navbar-fixed-bottom {
     border-top: 1px solid #ccc;
+    box-shadow: 0px -10px 100px #f2e2cd;
 }
 
 .footer .row {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .breadcrumb {
