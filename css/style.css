@@ -13,8 +13,13 @@ hr {
     margin-bottom: 15px;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 a:hover {
     transition: all ease-in-out 0.3s;
+    text-decoration: none !important;
 }
 
 #logo-horse {
@@ -60,6 +65,17 @@ a:hover {
 
 #exito {
     font-weight: 600;
+    user-select: none;
+    cursor: default;
+}
+
+.active{
+    background-color: #f2e2cd;
+    border-radius: 50px;
+}
+
+.navbar-brand{
+    margin-bottom: 10px;
 }
 
 .normalize {
@@ -76,6 +92,8 @@ a:hover {
     box-shadow: 0px 5px 5px #f2e2cd;
     background: #333333;
     color: white !important;
+    cursor: default;
+    user-select: none;
 }
 
 .header {
@@ -94,20 +112,24 @@ a:hover {
 .navbar-right li {
     transition: all 0.3s;
     border-radius: 50px;
+    margin-left: 5px;
 }
 
 .navbar-right li:hover {
     background-color: #f2e2cd;
 }
 
-
-
 .main {
     margin-top: 100px;
+    margin-bottom: 80px;
 }
 
 .center {
     text-align: center;
+}
+
+.centerContent{
+    margin: 0 auto;
 }
 
 .thumbnail {
@@ -122,13 +144,8 @@ a:hover {
 .thumbnail:hover {
     transform: scale(1.1);
     user-select: none;
-    text-decoration: none !important;
     box-shadow: 0px 5px 5px #f2e2cd;
     background: #e8e8e8;
-}
-
-.thumbnail:visited {
-    text-decoration: none !important;
 }
 
 .thumbnail img {
