@@ -12,5 +12,8 @@ app.config(function($routeProvider) {
     })
     .when("/contact", {
         templateUrl : "pages/contact.html"
+    })
+    .otherwise({
+        templateUrl : "pages/404.html"
     });
 });
