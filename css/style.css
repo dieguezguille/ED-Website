@@ -186,3 +186,8 @@ a:hover {
     box-shadow: 0px 1px 10px #f2e2cd;
 }
 
+.panel-default{
+    box-shadow: 0px 1px 10px #f2e2cd;
+    margin-bottom: 20px;
+}
+
