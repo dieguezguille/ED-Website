@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="estudioApp">
 
 <head>
     <title>Estudio Diéguez</title>
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 </head>
 
 <body>
@@ -36,122 +38,17 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="active"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Inicio</a></li>
-                    <li><a href="bio.html"><i class="fa fa-user-o" aria-hidden="true"></i> Biografía</a></li>
-                    <li><a href="services.html"><i class="fa fa-handshake-o" aria-hidden="true"></i> Servicios</a></li>
-                    <li><a href="contact.htmml"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto</a></li>
+                    <li><a href="#/!" class="active"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Inicio</a></li>
+                    <li><a href="#!bio"><i class="fa fa-user-o" aria-hidden="true"></i> Biografía</a></li>
+                    <li><a href="#!services"><i class="fa fa-handshake-o" aria-hidden="true"></i> Servicios</a></li>
+                    <li><a href="#!contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- MAIN -->
-    <div class="container main">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8">
-                <div id="sliderFotos" class="carousel slide centerContent" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#sliderFotos" data-slide-to="0" class="active"></li>
-                        <li data-target="#sliderFotos" data-slide-to="1"></li>
-                        <li data-target="#sliderFotos" data-slide-to="2"></li>
-                        <li data-target="#sliderFotos" data-slide-to="3"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="assets\img\background.jpg" alt="background1">
-                            <div class="carousel-caption">
-                                <h3>Creatividad en el desarrollo de negocios</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets\img\background2.jpg" alt="background2">
-                            <div class="carousel-caption">
-                                <h3>Prudente consejo en inversión y financiamiento</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets\img\background3.jpg" alt="background3">
-                            <div class="carousel-caption">
-                                <h3>Protección patrimonial familiar y planificación sucesoria</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets\img\background4.jpg" alt="background4">
-                            <div class="carousel-caption">
-                                <h3>Lo invitamos a retomar el control de su negocio</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#sliderFotos" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="right carousel-control" href="#sliderFotos" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4 jumbotron visible-lg">
-                <p>"Cuando pensamos en crecer necesitamos revisar nuestros objetivos y retomar el control de nuestros negocios."</p>
-                <br>
-                <div class="normalize">
-                    <span id="en">En ESTUDIO DIEGUEZ...</span>
-                    <br>
-                    <span id="lado">...estamos de su lado.</span>
-                </div>
-
-            </div>
-        </div>
-        <!-- HR -->
-        <hr>
-        <h3 id="exito" class="center">ALGUNOS CASOS DE ÉXITO</h3>
-        <hr>
-        <!-- CASOS DE EXITO -->
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <a href="#" class="thumbnail center">
-                    <img src="assets\img\cliente1.png" alt="Salta Tower">
-                    <div class="caption">
-                        <h3>Salta Tower Suites</h3>
-                        <p>Fideicomiso de administración e inversión orientado al gerenciamiento hotelero profesional a través
-                            de la cadena <b>Alvarez Argüelles</b></p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <a href="#" class="thumbnail center">
-                    <img src="assets\img\cliente2.png" style="height:90px; width:150px;" alt="Tineo">
-                    <div class="caption">
-                        <h3>Mirador del Tineo</h3>
-                        <p>Fideicomiso de administración al costo para el desarrollo de galería comercial y complejo de <b>Oficinas Premium</b></p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <a href="#" class="thumbnail center">
-                    <img src="assets\img\cliente3.png" style="width:150px;" alt="La Lucinda">
-                    <div class="caption">
-                        <h3>La Lucinda II</h3>
-                        <p>Fideicomiso de administración para el desarrollo de loteo cerrado o <b>Club de Campo</b></p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <a href="#" class="thumbnail center">
-                    <img src="assets\img\cliente4.png" alt="Aires Verdes">
-                    <div class="caption">
-                        <h3>Aires Verdes</h3>
-                        <p>Fideicomiso de administración al costo para desarrollo de primer edificio sustentable con certificación
-                            <b>Green Building</b></p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+    <div class="container main" ng-view></div>
     <!-- FIN MAIN -->
 
     <!-- FOOTER -->
@@ -183,6 +80,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
