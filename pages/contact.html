@@ -1,10 +1,7 @@
 <div class="container">
-
     <div class="row">
         <h3><b>CONTÁCTANOS</b></h3>
-
         <p class="well">¡Envíanos un mensaje! Completa todos los datos para que podamos dar contigo</p>
-        <!-- Text input-->
 
         <div class="col-md-6 pull-left">
             <form class="form-horizontal" action="https://formspree.io/guillermodieguez95@gmail.com" method="post" id="contact_form">
@@ -16,7 +13,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="first_name" placeholder="Nombre/s" class="form-control" type="text" required>
+                                <input name="Nombre" placeholder="Nombre/s" class="form-control" type="text" required>
                             </div>
                         </div>
                     </div>
@@ -27,7 +24,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="last_name" placeholder="Apellido/s" class="form-control" type="text" required>
+                                <input name="Apellido" placeholder="Apellido/s" class="form-control" type="text" required>
                             </div>
                         </div>
                     </div>
@@ -38,7 +35,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input name="email" placeholder="E-Mail" class="form-control" type="email" required>
+                                <input name="Correo Electrónico" placeholder="E-Mail" class="form-control" type="email" required>
                             </div>
                         </div>
                     </div>
@@ -50,7 +47,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                <input name="phone" placeholder="Teléfono" class="form-control" type="text">
+                                <input name="Teléfono" placeholder="Teléfono" class="form-control" type="text">
                             </div>
                         </div>
                     </div>
@@ -61,7 +58,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                <input name="address" placeholder="Dirección" class="form-control" type="text">
+                                <input name="Dirección" placeholder="Dirección" class="form-control" type="text">
                             </div>
                         </div>
                     </div>
@@ -72,57 +69,49 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                <input name="city" placeholder="Ciudad" class="form-control" type="text" required>
+                                <input name="Ciudad" placeholder="Ciudad" class="form-control" type="text" required>
                             </div>
                         </div>
                     </div>
 
                     <!-- Text area -->
                     <div class="form-group">
+                        <label class="col-md-3 col-sm-12 control-label">Link a tu CV</label>
+                        <div class="col-md-9 col-sm-12 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <input type="text" class="form-control" name="Link a CV" placeholder="Link a tu CV">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Text area -->
+                    <div class="form-group">
                         <label class="col-md-3 col-sm-12 control-label">Mensaje</label>
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="comment" placeholder="Mensaje" required></textarea>
+                                <textarea class="form-control" name="Mensaje" placeholder="Mensaje" required></textarea>
                             </div>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <label class="col-md-3 col-sm-12 control-label noLeftPad"> C.V.</label>
-                        <div class="col-md-9 noLeftPad">
-                            <div style="position:relative;">
-                                <a class='btn btn-primary' id="cvBtn" href='javascript:;'>Cargar archivo...
-                            <input type="file" id="curriculum" name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
-		                </a> &nbsp;
-                                <span class='label label-warning' id="upload-file-info"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Success message -->
-                    <div class="alert alert-success" role="alert" id="success_message">Éxito <i class="glyphicon glyphicon-thumbs-up"></i> Gracias por escribirnos. Estaremos en contacto pronto.</div>
 
                     <!-- Button -->
                     <div class="form-group">
-                        <label class="col-md-3 col-sm-12 control-label noLeftPad"></label>
+                        <label class="col-md-3 col-sm-12 control-label"></label>
                         <div class="col-md-9 col-sm-12 noLeftPad">
                             <button type="submit" class="btn btn-warning">Enviar <span class="glyphicon glyphicon-send"></span></button>
                         </div>
                     </div>
-
                 </fieldset>
             </form>
         </div>
-        <div class="col-md-6" id="map">
-            <h4><b>UBICACIÓN</b></h4> 
-            <iframe
-             class="panel panel-default"
-             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDbfSCSbnisHEU8Es7lTOebs6WZN6pUScM&q=Estudio+Dieguez,Salta+AR"
-             allowfullscreen>
+
+        <div class="col-md-6 pull-right" id="map">
+            <h4><b>UBICACIÓN</b></h4>
+            <iframe class="panel panel-default" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDbfSCSbnisHEU8Es7lTOebs6WZN6pUScM&q=Estudio+Dieguez,Salta+AR"
+                allowfullscreen>
             </iframe>
         </div>
     </div>
 </div>
-</div>
-<!-- /.container -->
