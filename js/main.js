@@ -24,7 +24,7 @@ estudioApp.config(function ($routeProvider) {
 });
 
 estudioApp.controller('ServicesController', ['$scope', function ($scope) {
-    $scope.$route = $route;
+    //$scope.$route = $route; Doesn't work dont know why of if its even needed!!!!!!!!!!!
     $scope.addEventListeners = function () {
         var servicios = document.getElementsByClassName("servicio");
         var elementos = document.getElementsByClassName("elemento");
