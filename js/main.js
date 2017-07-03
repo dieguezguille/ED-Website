@@ -54,4 +54,7 @@ $(document).ready(function () {
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
     });
+    $('.navbar-collapse a').click(function () {
+        $(".navbar-collapse").collapse('hide');
+    });
 });
