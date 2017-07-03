@@ -13,12 +13,17 @@ hr {
     margin-bottom: 15px;
 }
 
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none !important;
     transition: all ease-in-out 0.3s;
 }
 
-nav li a{
+nav li a {
     transition: all ease-in-out 0.3s;
     border: 1px solid #f8f8f8;
 }
@@ -211,8 +216,12 @@ nav li a:hover {
 
 .panel-default {
     box-shadow: 0px 1px 10px #f2e2cd;
-    margin-bottom: 20px;
-    max-width: 400px;
+    padding: 0px;
+    min-width: 100%;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 0px;
 }
 
 .servicio {
@@ -233,14 +242,18 @@ nav li a:hover {
     z-index: 1000;
 }
 
-.certs{
+.certs {
     margin-top: 40px;
     user-select: none;
     cursor: default;
 }
 
-.well{
+.well {
     background: #f2e2cd;
     border-radius: 10px;
     border: 1px solid #ecc38e;
+}
+
+#success_message {
+    display: none;
 }
