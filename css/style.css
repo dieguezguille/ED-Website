@@ -285,3 +285,24 @@ nav li a:hover {
 .label-warning{
     font-size: 0.9em;
 }
+
+.control-label{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 10px !important;
+}
+
+.inputGroupContainer{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.noLeftPad{
+    padding-left: 0px !important;
+}
+
+ #map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+ }
