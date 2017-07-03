@@ -70,7 +70,9 @@ a:hover {
     cursor: default;
 }
 
-.active {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
     background-color: #f2e2cd;
     border-radius: 50px;
 }

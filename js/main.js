@@ -46,3 +46,13 @@ estudioApp.controller('ServicesController', ['$scope', function ($scope) {
         $scope.addEventListeners();
     });
 }]);
+
+//Let jQuery manage active class for nav elements
+$(document).ready(function(){
+    $('.nav li:first').addClass('active');
+    $('.nav li').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    });
+
+});
