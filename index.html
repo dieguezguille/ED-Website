@@ -33,15 +33,14 @@
                             <p style="font-size: 12px; color: black;">AUDITORIA - CONSULTORIA EN DIRECCION Y FINANZAS</p>
                         </a>
                 </div>
-
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/!" class="active"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Inicio</a></li>
-                    <li><a href="#!bio"><i class="fa fa-user-o" aria-hidden="true"></i> Biografía</a></li>
-                    <li><a id="servicios" href="#!services"><i class="fa fa-handshake-o" aria-hidden="true"></i> Servicios</a></li>
-                    <li><a href="#!contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto</a></li>
+                    <li><a href="#/!" ng-class="{active: $route.current.activetab == 'inicio'}"><i class="fa fa-bookmark-o" aria-hidden="true"></i> Inicio</a></li>
+                    <li><a href="#!bio" ng-class="{active: $route.current.activetab == 'bio'}"><i class="fa fa-user-o" aria-hidden="true"></i> Biografía</a></li>
+                    <li><a href="#!services" ng-class="{active: $route.current.activetab == 'servicios'}"><i class="fa fa-handshake-o" aria-hidden="true"></i> Servicios</a></li>
+                    <li><a href="#!contact" ng-class="{active: $route.current.activetab == 'contacto'}"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto</a></li>
                 </ul>
             </div>
         </div>

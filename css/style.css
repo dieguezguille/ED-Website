@@ -70,12 +70,12 @@ a:hover {
     cursor: default;
 }
 
-.active{
+.active {
     background-color: #f2e2cd;
     border-radius: 50px;
 }
 
-.navbar-brand{
+.navbar-brand {
     margin-bottom: 10px;
 }
 
@@ -129,7 +129,7 @@ a:hover {
     text-align: center;
 }
 
-.centerContent{
+.centerContent {
     margin: 0 auto;
 }
 
@@ -178,24 +178,23 @@ a:hover {
     color: black;
 }
 
-#profileImg img{
+#profileImg img {
     max-width: 180px;
 }
 
-.list-group{
+.list-group {
     box-shadow: 0px 1px 10px #f2e2cd;
 }
 
-.panel-default{
+.panel-default {
     box-shadow: 0px 1px 10px #f2e2cd;
     margin-bottom: 20px;
 }
 
-#accordion{
+#accordion {
     font-size: 1.3em;
 }
 
-.servicio:hover{
+.servicio:hover {
     cursor: pointer;
 }
-

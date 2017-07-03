@@ -4,7 +4,7 @@ estudioApp.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "pages/main.html",
-            controller: ""
+            controller: "",
         })
         .when("/bio", {
             templateUrl: "pages/bio.html",
@@ -20,12 +20,11 @@ estudioApp.config(function ($routeProvider) {
         })
         .otherwise({
             templateUrl: "pages/404.html",
-            controller: ""
         });
 });
 
 estudioApp.controller('ServicesController', ['$scope', function ($scope) {
-
+    $scope.$route = $route;
     $scope.addEventListeners = function () {
         var servicios = document.getElementsByClassName("servicio");
         var elementos = document.getElementsByClassName("elemento");
@@ -34,7 +33,6 @@ estudioApp.controller('ServicesController', ['$scope', function ($scope) {
 
             // Creating a closure & passing value of i which is received in argument x
             (function (x) {
-                var isOpen = false;
                 // adding the click event to the the element 
                 servicios[x].addEventListener('click', function () {
                     elementos[x].classList.toggle("in");
@@ -42,16 +40,9 @@ estudioApp.controller('ServicesController', ['$scope', function ($scope) {
             }(i)); // passing the value of i
         }
     };
-
-    $scope.setActiveClass = function(){
-        var currentLink = document.getElementById("servicios");
-        // Cambiar la clase del link del menu a active y desactivar la de los demas
-    };
-
+    //Cuando carga el contenido de la vista...
     $scope.$on('$viewContentLoaded', function () {
-        //Agregar los event listeners cuando carga el contenido
+        //...Llamar a la funcion que carga los events listeners
         $scope.addEventListeners();
-        $scope.setActiveClass();
     });
-
 }]);
