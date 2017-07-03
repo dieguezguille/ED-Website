@@ -15,11 +15,18 @@ hr {
 
 a {
     text-decoration: none !important;
+    transition: all ease-in-out 0.3s;
 }
 
-a:hover {
+nav li a{
     transition: all ease-in-out 0.3s;
+    border: 1px solid #f8f8f8;
+}
+
+nav li a:hover {
     text-decoration: none !important;
+    border: 1px solid #ecc38e;
+    border-radius: 50px;
 }
 
 #logo-horse {
@@ -75,6 +82,7 @@ a:hover {
 .navbar-default .navbar-nav>.active>a:focus {
     background-color: #f2e2cd;
     border-radius: 50px;
+    border: 1px solid #ecc38e;
 }
 
 .navbar-brand {
@@ -182,21 +190,57 @@ a:hover {
 
 #profileImg img {
     max-width: 180px;
+    margin-top: 25px;
+    margin-left: 70px;
 }
 
 .list-group {
     box-shadow: 0px 1px 10px #f2e2cd;
 }
 
+.list-group-item {
+    transition: all ease-in-out 0.3s;
+}
+
+.list-group-item:hover {
+    transform: scale(1.1);
+    cursor: default;
+    box-shadow: 0px 1px 10px #ecc38e;
+    z-index: 1000;
+}
+
 .panel-default {
     box-shadow: 0px 1px 10px #f2e2cd;
     margin-bottom: 20px;
+    max-width: 400px;
 }
 
-#accordion {
-    font-size: 1.3em;
+.servicio {
+    transition: all ease-in-out 0.3s;
+    min-height: 50px;
+    text-align: left;
+    user-select: none;
+}
+
+.servicio h4 {
+    margin-top: 5px;
 }
 
 .servicio:hover {
     cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 1px 10px #ecc38e;
+    z-index: 1000;
+}
+
+.certs{
+    margin-top: 40px;
+    user-select: none;
+    cursor: default;
+}
+
+.well{
+    background: #f2e2cd;
+    border-radius: 10px;
+    border: 1px solid #ecc38e;
 }
