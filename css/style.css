@@ -13,13 +13,25 @@ hr {
     margin-bottom: 15px;
 }
 
-a {
-    text-decoration: none !important;
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-a:hover {
-    transition: all ease-in-out 0.3s;
+a {
     text-decoration: none !important;
+    transition: all ease-in-out 0.3s;
+}
+
+nav li a {
+    transition: all ease-in-out 0.3s;
+    border: 1px solid #f8f8f8;
+}
+
+nav li a:hover {
+    text-decoration: none !important;
+    border: 1px solid #ecc38e;
+    border-radius: 50px;
 }
 
 #logo-horse {
@@ -70,12 +82,15 @@ a:hover {
     cursor: default;
 }
 
-.active{
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
     background-color: #f2e2cd;
     border-radius: 50px;
+    border: 1px solid #ecc38e;
 }
 
-.navbar-brand{
+.navbar-brand {
     margin-bottom: 10px;
 }
 
@@ -129,7 +144,7 @@ a:hover {
     text-align: center;
 }
 
-.centerContent{
+.centerContent {
     margin: 0 auto;
 }
 
@@ -176,4 +191,118 @@ a:hover {
 
 .fa {
     color: black;
+}
+
+#profileImg img {
+    max-width: 180px;
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.list-group {
+    box-shadow: 0px 1px 10px #f2e2cd;
+}
+
+.list-group-item {
+    transition: all ease-in-out 0.3s;
+}
+
+.list-group-item:hover {
+    transform: scale(1.1);
+    cursor: default;
+    box-shadow: 0px 1px 10px #ecc38e;
+    z-index: 1000;
+}
+
+.panel-default {
+    box-shadow: 0px 1px 10px #f2e2cd;
+    padding: 0px;
+    min-width: 100%;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 0px;
+}
+
+.servicio {
+    transition: all ease-in-out 0.3s;
+    min-height: 50px;
+    text-align: left;
+    user-select: none;
+}
+
+.servicio h4 {
+    margin-top: 5px;
+}
+
+.servicio:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 1px 10px #ecc38e;
+    z-index: 1000;
+}
+
+.certs {
+    margin-top: 40px;
+    user-select: none;
+    cursor: default;
+}
+
+.well {
+    background: #f2e2cd;
+    border-radius: 10px;
+    border: 1px solid #ecc38e;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px;
+}
+
+#success_message {
+    display: none;
+}
+
+#curriculum {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    background-color: transparent;
+    color: transparent;
+}
+
+#cvBtn{
+    margin-bottom: 10px;
+}
+
+.label-warning{
+    font-size: 0.9em;
+}
+
+.control-label{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 10px !important;
+}
+
+.inputGroupContainer{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.noLeftPad{
+    padding-left: 0px !important;
+}
+
+#map iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;
 }
