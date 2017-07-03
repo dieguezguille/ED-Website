@@ -16,7 +16,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="first_name" placeholder="Nombre/s" class="form-control" type="text">
+                                <input name="first_name" placeholder="Nombre/s" class="form-control" type="text" required>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="last_name" placeholder="Apellido/s" class="form-control" type="text">
+                                <input name="last_name" placeholder="Apellido/s" class="form-control" type="text" required>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input name="email" placeholder="E-Mail" class="form-control" type="text">
+                                <input name="email" placeholder="E-Mail" class="form-control" type="email" required>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                <input name="city" placeholder="Ciudad" class="form-control" type="text">
+                                <input name="city" placeholder="Ciudad" class="form-control" type="text" required>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                         <div class="col-md-9 col-sm-12 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+                                <textarea class="form-control" name="comment" placeholder="Mensaje" required></textarea>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,14 @@
                 </fieldset>
             </form>
         </div>
-        <div class="col-md-6" id="map"></div>
+        <div class="col-md-6" id="map">
+            <h4><b>UBICACIÓN</b></h4> 
+            <iframe
+             class="panel panel-default"
+             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDbfSCSbnisHEU8Es7lTOebs6WZN6pUScM&q=Estudio+Dieguez,Salta+AR"
+             allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </div>
 </div>

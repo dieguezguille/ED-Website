@@ -300,3 +300,9 @@ nav li a:hover {
 .noLeftPad{
     padding-left: 0px !important;
 }
+
+#map iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;
+}
