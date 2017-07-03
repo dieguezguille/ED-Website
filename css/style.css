@@ -254,6 +254,34 @@ nav li a:hover {
     border: 1px solid #ecc38e;
 }
 
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px;
+}
+
 #success_message {
     display: none;
+}
+
+#curriculum {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    background-color: transparent;
+    color: transparent;
+}
+
+#cvBtn{
+    margin-bottom: 10px;
+}
+
+.label-warning{
+    font-size: 0.9em;
 }
